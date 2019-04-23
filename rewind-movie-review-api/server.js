@@ -20,7 +20,7 @@ app.use(cors())
 app.use(bodyParser.json())
 
 // Routes
-app.get('/', (req, res) => res.send('Hello World!'));
+app.get('/', (req, res) => res.send('Hello World!')); 
 app.use('/movies', movieRoutes); // From 'controllers'
 app.use('/users', userRoutes) // From 'controllers'
 
