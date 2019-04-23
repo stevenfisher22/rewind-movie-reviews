@@ -21,7 +21,7 @@ app.use(bodyParser.json())
 
 // Routes
 app.get('/', (req, res) => res.send('Hello World!'));
-app.use('/movies', movieRoutes); // From Controllers
-app.use('/users', userRoutes) // From Controllers
+app.use('/movies', movieRoutes); // From 'controllers'
+app.use('/users', userRoutes) // From 'controllers'
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
