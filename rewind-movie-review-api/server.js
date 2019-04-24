@@ -24,4 +24,4 @@ app.get('/', (req, res) => res.send('Hello World!'));
 app.use('/movies', movieRoutes); // From 'controllers'
 app.use('/users', userRoutes) // From 'controllers'
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+app.listen(port, () => console.log(`Listening on port ${port}!`));
