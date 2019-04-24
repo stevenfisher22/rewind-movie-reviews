@@ -6,14 +6,14 @@ const {createUser, getUser, getUsers} = require('../repositories/user');
 
 
 routes.get('/', (req, res) => {
-    // Write .get function to get movies from db and return all movies
+    // GET function to get users from db and return all users
     getUsers().then(users => {
         res.status(200).json(users);
     })
 })
 
 routes.get('/:id', (req, res) => {
-    // .get function to get movies from db and return all movies
+    // GET function to get users from db and return specific user id
     const promise = getUser(req.params.id)
     promise.then(user => {
         res.status(200).json(user);
@@ -47,6 +47,5 @@ routes.post('/:id/reviews', (req, res) => {
 routes.put('/:id/reviews/:reviewId', (req, res) => {
     res.status(200).json(req.body)
 })
-
 
 module.exports = routes;
