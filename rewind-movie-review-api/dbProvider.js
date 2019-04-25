@@ -1,5 +1,5 @@
 // DB Provider sets up the connection to the database
-// and Configures models to be exported for use by the repository
+// And Configures models to be exported for use by the Repository
 
 const Sequelize = require('sequelize');
 const UserModel = require('./models/user');

@@ -35,9 +35,8 @@ routes.put('/:id', (req, res) => {
 })
 
 
-
 routes.get('/:id/reviews', (req, res) => {
-    res.status(200).json({ message: `Here are the reviews for ${req.params.id}`})
+    res.status(200).json({ message: `Here are the reviews for ${req.params.id}` })
 })
 
 routes.post('/:id/reviews', (req, res) => {
