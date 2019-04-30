@@ -1,6 +1,5 @@
 // Models define structure to map to the database
 
-
 module.exports = (sequelize, Sequelize) => {
     return sequelize.define('user', {
         id: {
