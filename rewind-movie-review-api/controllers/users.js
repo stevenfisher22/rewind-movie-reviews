@@ -4,7 +4,6 @@
 const routes = require('express').Router();
 const {createUser, getUser, getUsers} = require('../repositories/user');
 
-
 routes.get('/', (req, res) => {
     // GET function to get users from db and return all users
     getUsers().then(users => {
