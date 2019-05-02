@@ -1,4 +1,5 @@
 // Repository defines interactions with the database
+
 const {User} = require('../dbProvider');
 
 function CreateUser(newUser) {
