@@ -1,7 +1,6 @@
 // Controllers define routes and business logic 
 // Controllers call to repositories when you need to access the database
 
-
 const routes = require('express').Router();
 const {createUser, getUser, getUsers} = require('../repositories/user');
 
